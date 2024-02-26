@@ -11,12 +11,13 @@ class Api {
         return res.json();
     }
 
-    _fetch(url, method, body) {
-        return fetch(url, {
+    async _fetch(url, method, body) {
+        const res = await fetch(url, {
             method,
             headers: this._headers,
             body: body ? JSON.stringify(body) : undefined,
-        }).then(res => this._handleResponse(res));
+        });
+        return this._handleResponse(res);
     }
 
 

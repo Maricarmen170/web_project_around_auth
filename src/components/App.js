@@ -121,11 +121,6 @@ const handleSignOut = () => {
   setLoggedIn(false);
 };
 
-/*async function handleRegisterUser(email, password) {
-  const response = await registerUser(email, password);
-  return response;
-}*/
-
 useEffect(() => {
   const handleTokenCheck = () => {
     if (localStorage.getItem("jwt")) {

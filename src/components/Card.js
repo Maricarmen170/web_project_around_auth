@@ -31,7 +31,7 @@ function handleCardDelete() {
 }
   return (
     <div className="element">
-    <img className="element__image" src={props.link} alt=" " onClick={handleClick}/>
+    <img className="element__image" src={props.link} alt="icono de imagen " onClick={handleClick}/>
     <div className="remove">
         <img className={cardDeleteButtonClassName} id="trashButton" src={trash} onClick={handleCardDelete} alt="icono de bote de basura" />
     </div>
