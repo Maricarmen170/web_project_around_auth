@@ -1,4 +1,4 @@
-.modal__popup-img {
+/*.modal__popup-img {
     background-color: rgba(0, 0, 0, 0.8);
     display: none;
     position: fixed;
@@ -8,6 +8,19 @@
     z-index: 5;
     width: 100vw;
     height: 100vh;
+}*/
+
+.modal__popup-img {
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
 }
 
 

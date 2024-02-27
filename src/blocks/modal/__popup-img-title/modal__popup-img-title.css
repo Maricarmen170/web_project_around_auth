@@ -1,20 +1,17 @@
-.modal__popup-img-title {
+
+.modal__popup-img-title{
     font-family: "Inter";
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
     color: #fff;
     margin-top: 10px;
-    display: none;
-    /*margin: 10px auto 0 0;*/
-    margin: auto;
-    width: 291px;
-    height: 12px;
+    margin-left: 50%;
 }
 
-@media screen and (min-width:320px)and (max-width:768px) {
+
+@media screen and (min-width:320px)and (max-width:898px) {
     .modal__popup-img-title{
-        width: 240px;
-        margin: 10px 40px 0 40px;
+        margin-left: 45%;
     }   
 }
