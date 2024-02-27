@@ -7,6 +7,7 @@ function AddPlacePopup({isOpen, onClose, onAddPlace}) {
 
     function handleSubmit(evt){
         evt.preventDefault()
+        if (placeName)
         onAddPlace(placeName, placeLink);
     }
     function onNameChange(evt){
