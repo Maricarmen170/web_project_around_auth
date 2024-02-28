@@ -18,9 +18,9 @@ function AddPlacePopup({isOpen, onClose, onAddPlace}) {
     }
   return (
     <PopupWithForm title="Nuevo lugar" name="place" isOpen={isOpen} onClose={onClose} onSubmit={handleSubmit} >
-    <input type="text" name="title" id="title"  className="popup__text" minLength="2" maxLength="40" required onChange={onNameChange} />
+    <input type="text" name="title" id="title"  className="popup__text" placeholder="Título" minLength="2" maxLength="40" required onChange={onNameChange} />
     <span className="popup__input-error name-error" id="name-error"></span>
-    <input type="url" name="src" id="link"  className="popup__text" minLength="2" maxLength="200" required onChange={onLinkChange} />
+    <input type="url" name="src" id="link"  className="popup__text" placeholder="Enlace a la imagen" minLength="2" maxLength="200" required onChange={onLinkChange} />
     <span className="popup__input-error about-me-error" id="link-error"></span>
     </PopupWithForm>
   )
